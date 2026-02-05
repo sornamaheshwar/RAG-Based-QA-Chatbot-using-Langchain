@@ -206,3 +206,6 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 chroma_db/
+data/
+uploads/
+gradio_cached_examples/

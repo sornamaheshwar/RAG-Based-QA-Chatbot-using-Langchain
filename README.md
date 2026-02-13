@@ -92,4 +92,4 @@ Details of the evaluation methodology and observations are documented in evaluat
 This project is licensed under the MIT License.
 
 ## Author
-Built as a hands-on project to demonstrate applied skills in Retrieval-Augmented Generation, document processing, and system-level AI engineering.
+M Sakthi Sorna Maheswar

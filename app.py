@@ -5,18 +5,15 @@ from langchain_community.chat_models import ChatOllama
 from ingestion import ingest_uploaded_pdf
 
 
-# --------------------------------------------------
+
 #Local LLM (Ollama)
-# --------------------------------------------------
 llm = ChatOllama(
     model="llama3",
     temperature=0.3
 )
 
 
-# --------------------------------------------------
 #RAG chat function
-# --------------------------------------------------
 def stream_response(message, history, vector_store):
     """
     Handles user queries using the session-specific vector store.
@@ -73,9 +70,7 @@ Knowledge:
         yield partial_response
 
 
-# --------------------------------------------------
 #Gradio UI
-# --------------------------------------------------
 with gr.Blocks() as demo:
 
     gr.Markdown("## 📘 Document-Aware RAG Chatbot")
@@ -107,7 +102,5 @@ with gr.Blocks() as demo:
     )
 
 
-# --------------------------------------------------
 #Launch application
-# --------------------------------------------------
 demo.launch()
